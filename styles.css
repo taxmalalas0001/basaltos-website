@@ -244,3 +244,54 @@ footer a:hover {
 .offers a:hover {
     text-decoration: underline;
 }
+
+.header-logo img {
+    width: 75px;
+    height: auto;
+}
+
+.TEAM-MEMBERS {
+    display: grid;
+    /* Creates as many columns as will fit, with a minimum width of 200px */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem; /* Spacing between cards */
+    margin-top: 2rem;
+}
+
+/* Styling for individual member cards */
+.member {
+    background-color: #f8f9fa; /* Light grey background to distinguish from widget */
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center; /* Centers all text and icons */
+    transition: transform 0.2s ease;
+    border: 1px solid #eee;
+}
+
+.member:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.member h4 {
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Spacing and sizing for the GitHub/Web icons */
+.member a {
+    font-size: 1.25rem;
+    color: #555;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.member a:hover {
+    color: #007bff; /* Blue hover effect */
+}
+
+.member p {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+}
